@@ -43,7 +43,7 @@ include 'dbcon.php';
                         
                         <p class="raises"><span><?php echo $row['price'];?></span> </p>
                         <p class="desic"><?php echo $row['des'];?></p>
-                        <button class="btn btn-success btn-sm">Donate Now</button>
+                        <a class="btn btn-success btn-sm" href="quick.php">Donate Now</a>
                     </div>
                 </div>
                 <?php } ?>

@@ -69,27 +69,27 @@
                 <div class="about-quick-box row">
                     <div class="col-md-6">
                         <div class="about-qcard">
-                           <i class="fas fa-user"></i>
+                          <a href="become.php"> <i class="fas fa-user"></i>
                           <!--  <img src="pic/vision.jpg"> -->
-                            <p>Becom a Volunteer</p>
+                            <p>Becom a Volunteer</p></a>
                         </div>
                     </div>
                      <div class="col-md-6">
                         <div class="about-qcard ">
-                           <i class="fas fa-search-dollar red"></i>
-                            <p>Quick Fundrais</p>
+                          <a href="quick.php"> <i class="fas fa-search-dollar red"></i>
+                            <p>Quick Fundrais</p></a>
                         </div>
                     </div>
                      <div class="col-md-6">
                         <div class="about-qcard ">
-                           <i class="fas fa-donate yell"></i>
-                            <p>Giv Donation</p>
+                          <a href="give.php"> <i class="fas fa-donate yell"></i>
+                            <p>Give Donation</p></a>
                         </div>
                     </div>
                      <div class="col-md-6">
                         <div class="about-qcard ">
-                           <i class="fas fa-hands-helping blu"></i>
-                            <p>Help Someone</p>
+                          <a href="help.php"> <i class="fas fa-hands-helping blu"></i>
+                            <p>Help Someone</p></a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                         
                         <p class="raises"><span><?php echo $row['price'];?></span> </p>
                         <p class="desic"><?php echo $row['des'];?></p>
-                        <button class="btn btn-success btn-sm">Donate Now</button>
+                        <a href="give.php"><button class="btn btn-success btn-sm">Donate Now</button></a>
                     </div>
                 </div>
                 <!-- <div class="col-md-4 col-sm-6">

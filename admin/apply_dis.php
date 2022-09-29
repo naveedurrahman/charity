@@ -100,7 +100,7 @@
                     </a>
                   </td>-->
                   <td>
-       <a href="product_deleted.php?did=<?php echo $row['id'];?>" onclick="return confirm('Do you really want to delete this ?')">
+       <a href="apply_deleted.php?did=<?php echo $row['id'];?>" onclick="return confirm('Do you really want to delete this ?')">
                       <img src="pic/delete.jpg" style="max-width: 50px;" alt="">
                     </a>
                   </td>

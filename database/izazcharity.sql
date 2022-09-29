@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 25, 2022 at 04:05 AM
+-- Generation Time: Sep 29, 2022 at 11:22 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -38,7 +38,7 @@ CREATE TABLE `about` (
 --
 
 INSERT INTO `about` (`id`, `title`, `des`) VALUES
-(6, 'About Orphans and widos Pakistan', 'Orphans and widos Pakistan is one of the leading, non-profit organization, fully dedicated to humanitarian services since 1990. Orphans and widos workers and volunteers continue to work tirelessly for the relief of affected people across Pakistan. Our dedicated services include disaster management, health services, education, orphan care, clean water and other community services. Orphans and widos Foundation Pakistan being non-political, non-governmental and non-profit organization is committed to serving humanity especially vulnerable and orphans without any kind of discrimination to contribute in their well-being of health, education, financial sustainability, livelihood, shelter, availability of clean water, mosques, savage of disaster and other aspects of life. We also pay attention to the welfare of our employees by means of resource mobilization and developing partnership with NGOs and other concerned public and private organizations. Our volunteers remain satisfied by providing their support and engaging in different useful programs and doing all such acts that are required to achieve our goal to help others with integrity.\r\n      ');
+(7, 'this is a charity clubb', '                                       Hi i am izaz khan welcome here here\r\n                        ');
 
 -- --------------------------------------------------------
 
@@ -63,7 +63,7 @@ CREATE TABLE `apply` (
 
 INSERT INTO `apply` (`id`, `image`, `name`, `fname`, `address`, `phone`, `country`, `email`) VALUES
 (1, 'pic/vision.jpg', 'izaz', 'jan', 'chd', '03151207603', 'pk', 'izazk38@gmail.com'),
-(2, 'pic/Remini20210902223811595.jpg', 'Naveed ur Rahman', 'Ali Rahman', 'Peshawar', '03109704986', 'Pakistan', 'rahmannaveed570@gmail.com');
+(2, 'pic/20210227_184506.jpg', 'Bilal Ahmad', 'dsd', 'jkgkgjk', '0343-9393370', 'Pakistan', 'bbilalkhan031@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -85,6 +85,31 @@ INSERT INTO `area` (`area_id`, `area_name`) VALUES
 (9, 'Charsadda'),
 (17, '8'),
 (20, '17');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `become`
+--
+
+CREATE TABLE `become` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `fname` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `cnic` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `become`
+--
+
+INSERT INTO `become` (`id`, `name`, `fname`, `email`, `phone`, `cnic`) VALUES
+(1, 'izaz', 'jan', 'abc@gmail.com', '0315-1207603', '17101049384983'),
+(3, 'amir', 'amir', 'abc@gmail.com', '0315-1207603', '17101049384983'),
+(4, 'kaltoor dress', 'jan', 'abc@gmail.com', '0315-1207603', '17101049384983'),
+(5, 'izaz', 'jan', 'khanstudio7603@gmail.com', '0315-1207603', '17101049384983');
 
 -- --------------------------------------------------------
 
@@ -128,9 +153,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `subject`, `email`, `phone`, `msg`) VALUES
-(3, 'ill', 'khanstudio7603@gmail.com', '03151207603', 'dd'),
-(4, 'abc', 'abc@gmail.com', '03151207603', 'abc'),
-(5, 'hdskjf;ds', 'rahmannaveed570@gmail.com', '03109704986', 'mfdnfklsdnfd');
+(4, 'abc', 'abc@gmail.com', '03151207603', 'abc');
 
 -- --------------------------------------------------------
 
@@ -171,13 +194,66 @@ CREATE TABLE `gallery` (
 
 INSERT INTO `gallery` (`id`, `image`) VALUES
 (1, 'pic/image_04.jpg'),
-(2, 'pic/image_02.jpg'),
-(3, 'pic/image_03.jpg'),
-(4, 'pic/image_05.jpg'),
-(5, 'pic/image_08.jpg'),
-(6, 'pic/image_07.jpg'),
-(7, 'pic/slider-1.jpg'),
-(8, 'pic/slider-2.jpg');
+(2, 'pic/image_04.jpg'),
+(3, 'pic/vision.jpg'),
+(4, 'pic/misin.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `give`
+--
+
+CREATE TABLE `give` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `phone` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `amount` varchar(100) NOT NULL,
+  `fromdate` varchar(50) NOT NULL,
+  `todate` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `give`
+--
+
+INSERT INTO `give` (`id`, `name`, `phone`, `email`, `amount`, `fromdate`, `todate`) VALUES
+(1, 'abc', '0315-1207603', 'abc@gmail.com', '1000', '2022-09-26', '2022-09-30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `help`
+--
+
+CREATE TABLE `help` (
+  `id` int(11) NOT NULL,
+  `name` varchar(11) NOT NULL,
+  `city` varchar(11) NOT NULL,
+  `phone` varchar(11) NOT NULL,
+  `family` varchar(11) NOT NULL,
+  `address` varchar(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `help`
+--
+
+INSERT INTO `help` (`id`, `name`, `city`, `phone`, `family`, `address`) VALUES
+(1, '0', '0', '315', '5', '0'),
+(2, 'abc', 'acb', '0315-120760', 'cdhcb', 'chd');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `intro_video`
+--
+
+CREATE TABLE `intro_video` (
+  `id` int(11) NOT NULL,
+  `video_name` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -258,6 +334,28 @@ INSERT INTO `product` (`prod_id`, `image`, `title`, `price`, `model`, `des`, `lo
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `quick`
+--
+
+CREATE TABLE `quick` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `amount` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `quick`
+--
+
+INSERT INTO `quick` (`id`, `name`, `city`, `amount`, `phone`, `email`) VALUES
+(1, 'Aizaz', 'CHD', '1000', '0315-1207603', 'abc@gmail.com');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `report`
 --
 
@@ -308,9 +406,9 @@ INSERT INTO `router` (`router_id`, `from_area_id`, `to_area_id`, `fess`, `type_i
 
 CREATE TABLE `slider` (
   `id` int(11) NOT NULL,
-  `image` varchar(200) NOT NULL,
-  `title` varchar(100) NOT NULL,
-  `des` text NOT NULL
+  `image` varchar(100) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `des` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -318,8 +416,8 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`id`, `image`, `title`, `des`) VALUES
-(4, 'pic/slider-1.jpg', 'WE ONLY HAVE WHAT WE GIVE', 'We believe that we can make a difference in these children\'s life. Help Us'),
-(5, 'pic/slider-3.jpg', 'WE ONLY HAVE WHAT WE GIVE', 'We believe that we can make a difference in these children\'s life. Help Us');
+(2, 'pic/events.jpg', 'What We do', 'We are help for education ,health, old age home,gi'),
+(3, 'pic/misin.jpg', 'What We dooo abcccccc ', 'abcwwwWe are help for education ,health, old age h');
 
 -- --------------------------------------------------------
 
@@ -341,8 +439,7 @@ CREATE TABLE `sponser` (
 
 INSERT INTO `sponser` (`id`, `image`, `title`, `des`, `price`) VALUES
 (5, 'pic/image_04.jpg', 'Child Education in Africa', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s', 'Raised : $34,425 / $500,000'),
-(11, 'pic/image_05.jpg', 'Child Education in Africa', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s', 'Raised : $34,425 / $500,000'),
-(12, 'pic/image_06.jpg', 'Child Education in Africa', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s', 'Raised : $34,425 / $500,000');
+(6, 'pic/image_04.jpg', 'welcomeeee', 'thi is sis sis a me wofm cndjnf jdnf fubf jfcfuwf ufcbw chwbcj dwucwr fudbc dcbw vubvurf vjnruef', 'Raised : $34,425 / $500,000');
 
 -- --------------------------------------------------------
 
@@ -380,7 +477,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`user_id`, `user_name`, `password`) VALUES
 (1, 'admin', '123'),
-(2, 'izaz', 'khan');
+(2, 'izaz', 'khan'),
+(3, 'balil', 'allah');
 
 -- --------------------------------------------------------
 
@@ -444,6 +542,12 @@ ALTER TABLE `area`
   ADD PRIMARY KEY (`area_id`);
 
 --
+-- Indexes for table `become`
+--
+ALTER TABLE `become`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `booking`
 --
 ALTER TABLE `booking`
@@ -468,6 +572,24 @@ ALTER TABLE `gallery`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `give`
+--
+ALTER TABLE `give`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `help`
+--
+ALTER TABLE `help`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `intro_video`
+--
+ALTER TABLE `intro_video`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `mach`
 --
 ALTER TABLE `mach`
@@ -484,6 +606,12 @@ ALTER TABLE `mission`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`prod_id`);
+
+--
+-- Indexes for table `quick`
+--
+ALTER TABLE `quick`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `report`
@@ -541,7 +669,7 @@ ALTER TABLE `vision`
 -- AUTO_INCREMENT for table `about`
 --
 ALTER TABLE `about`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `apply`
@@ -556,6 +684,12 @@ ALTER TABLE `area`
   MODIFY `area_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
+-- AUTO_INCREMENT for table `become`
+--
+ALTER TABLE `become`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `booking`
 --
 ALTER TABLE `booking`
@@ -565,7 +699,7 @@ ALTER TABLE `booking`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `customer`
@@ -577,7 +711,25 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `give`
+--
+ALTER TABLE `give`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `help`
+--
+ALTER TABLE `help`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `intro_video`
+--
+ALTER TABLE `intro_video`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `mach`
@@ -589,13 +741,19 @@ ALTER TABLE `mach`
 -- AUTO_INCREMENT for table `mission`
 --
 ALTER TABLE `mission`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
   MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT for table `quick`
+--
+ALTER TABLE `quick`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `report`
@@ -613,13 +771,13 @@ ALTER TABLE `router`
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `sponser`
 --
 ALTER TABLE `sponser`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `type`
@@ -631,7 +789,7 @@ ALTER TABLE `type`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `vehical`
@@ -643,7 +801,7 @@ ALTER TABLE `vehical`
 -- AUTO_INCREMENT for table `vision`
 --
 ALTER TABLE `vision`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

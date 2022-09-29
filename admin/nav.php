@@ -5,7 +5,7 @@
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.php">Startmin</a>
+                    <a class="navbar-brand" href="index.php">Administrator</a>
                 </div>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -15,12 +15,12 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <ul class="nav navbar-nav navbar-left navbar-top-links">
+                <!-- <ul class="nav navbar-nav navbar-left navbar-top-links">
                     <li><a href="#"><i class="fa fa-home fa-fw"></i> Website</a></li>
-                </ul>
+                </ul> -->
 
                 <ul class="nav navbar-right navbar-top-links">
-                    <li class="dropdown navbar-inverse">
+                    <!-- <li class="dropdown navbar-inverse">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             <i class="fa fa-bell fa-fw"></i> <b class="caret"></b>
                         </a>
@@ -73,10 +73,10 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-user fa-fw"></i> secondtruth <b class="caret"></b>
+                            <i class="fa fa-user fa-fw"></i> Admin <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
@@ -152,6 +152,19 @@
                             <li>
                             <a href="apply_dis.php"><i class="fa fa-file-text"></i> <b>Applicant Record</b></a>
                             </li>
+                            <!-- <li>
+                            <a href="video.php"><i class="fa fa-file-text"></i> <b>video</b></a>
+                            </li>
+                             --><!--  <li>
+                            <a href="becomedeteil.php"><i class="fa fa-file-text"></i> <b>Becom a Volunteer </b></a>
+                            </li> -->
+                            <!-- <li>
+
+                            <a href="quickdetail.php"><i class="fa fa-file-text"></i> <b>Quick Fundrais</b></a>
+                            </li>
+                            <li>
+                            <a href="givedetail.php"><i class="fa fa-file-text"></i> <b>Give Donation</b></a>
+                            </li> -->
                             <li>
                             <a href="contact.php"><i class="fa fa-file-text"></i> <b>Contact Us</b></a>
                             </li>

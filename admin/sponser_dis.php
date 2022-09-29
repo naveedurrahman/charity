@@ -9,7 +9,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Product Views</h1>
+                            <h1 class="page-header">Sponser Views</h1>
                         </div>
                         <!-- /.col-lg-12 -->
                         <div class="container-fluid">
@@ -60,7 +60,7 @@
                                                     <TH>Title</TH>
                                                     <TH>Price</TH>
                                                   
-                                                    <TH>des</TH>
+                                                    <TH>description</TH>
                                                  
                                                     <th>Deleted</th>
                                                     
@@ -95,7 +95,7 @@
                     </a>
                   </td>-->
                   <td>
-       <a href="product_deleted.php?did=<?php echo $row['id'];?>" onclick="return confirm('Do you really want to delete this ?')">
+       <a href="sponser_deleted.php?did=<?php echo $row['id'];?>" onclick="return confirm('Do you really want to delete this ?')">
                       <img src="pic/delete.jpg" style="max-width: 50px;" alt="">
                     </a>
                   </td>

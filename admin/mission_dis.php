@@ -9,7 +9,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Mission & Vision Views</h1>
+                            <h1 class="page-header">Mission Views</h1>
                         </div>
                         <!-- /.col-lg-12 -->
                         <div class="container-fluid">
@@ -59,8 +59,9 @@
                                                     <th>Image</th>
                                                     <TH>Title</TH>
                                                     
-                                                    <TH>des</TH>
+                                                    <TH>description</TH>
                                                   
+                                                    <th>Edit</th>
                                                     <th>Deleted</th>
                                                     
                                                 </tr>
@@ -88,10 +89,10 @@
                 <!--<td><img src="<?php #echo $row['product_image'];?>" style="max-width: 100px;" alt=""></td>-->
                  <!--<td><?php #echo $row['category_name'];?></td>-->
 
-                 <!--<td> <a href=".php?sid=<?php //echo $data[''];?>">
+                 <td> <a href="missionedit.php?id=<?php echo $row['id'];?>">
                       <img src="pic/update.jpg" style="max-width: 50px;" alt="">
                     </a>
-                  </td>-->
+                  </td>
                   <td>
        <a href="mission_deleted.php?did=<?php echo $row['id'];?>" onclick="return confirm('Do you really want to delete this ?')">
                       <img src="pic/delete.jpg" style="max-width: 50px;" alt="">

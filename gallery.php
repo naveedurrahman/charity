@@ -23,7 +23,9 @@ include "navbar.php"; include 'dbcon.php';
  <!--  ************************* Gallery Starts Here ************************** -->
         <div id="portfolio" class="gallery">    
            <div class="container">
-                <?php
+              
+              <div class="row">
+                  <?php
     $selecte = "SELECT * FROM `gallery`";
                 $result1 = mysqli_query($con, $selecte);
                  
@@ -32,8 +34,6 @@ include "navbar.php"; include 'dbcon.php';
               
                 
                 ?>
-              <div class="row">
-                
 
         <!-- <div class="gallery-filter d-none d-sm-block">
             <button class="btn btn-default filter-button" data-filter="all">All</button>
@@ -51,10 +51,10 @@ include "navbar.php"; include 'dbcon.php';
             </div>
 
             
-
+<?php } ?>
             
         </div>
-    <?php } ?>
+    
     </div>
        
        

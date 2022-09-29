@@ -61,9 +61,10 @@
                                                    <!--  <TH>Price</TH>
                                                     
                                                     <TH>Model</TH> -->
-                                                    <TH>Des</TH>
+                                                    <TH>description</TH>
                                                   <!-- <th>location</th>
                                                   <th>phone</th> -->
+                                                  <th>Edit</th>
                                                     <th>Deleted</th>
                                                     
                                                 </tr>
@@ -93,12 +94,12 @@
                 <!--<td><img src="<?php #echo $row['product_image'];?>" style="max-width: 100px;" alt=""></td>-->
                  <!--<td><?php #echo $row['category_name'];?></td>-->
 
-                 <!--<td> <a href=".php?sid=<?php echo $data[''];?>">
+                 <td> <a href="aboutedit.php?id=<?php echo $row['id'];?>">
                       <img src="pic/update.jpg" style="max-width: 50px;" alt="">
                     </a>
-                  </td>-->
+                  </td>
                   <td>
-       <a href="about_deleted.php?did=<?php echo $row['id'];?>" onclick="return confirm('Do you really want to delete this ?')">
+       <a href="about_delete.php?did=<?php echo $row['id'];?>" onclick="return confirm('Do you really want to delete this ?')">
                       <img src="pic/delete.jpg" style="max-width: 50px;" alt="">
                     </a>
                   </td>

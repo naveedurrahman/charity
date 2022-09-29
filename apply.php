@@ -80,19 +80,21 @@ include "navbar.php";
 
                     <div class="row cont-row">
                         <div  class="col-sm-3"><label>Enter Name </label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm"  ></div>
+                        <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm" required >
+
+                        </div>
                     </div>
                     <div  class="row cont-row">
                         <div  class="col-sm-3"><label>Email Address </label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" name="email" placeholder="Enter Email Address" class="form-control input-sm"  ></div>
+                        <div class="col-sm-8"><input type="email" name="email" placeholder="Enter Email Address" class="form-control input-sm" required ></div>
                     </div>
                     <div  class="row cont-row">
                         <div  class="col-sm-3"><label>Mobile Number</label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" name="phone" placeholder="Enter Mobile Number" class="form-control input-sm"  ></div>
+                        <div class="col-sm-8"><input type="tel" pattern="[0-9]{4}-[0-9]{7}" name="phone" placeholder="0315-456789" class="form-control input-sm" required ></div>
                     </div>
                      <div class="row cont-row">
                         <div  class="col-sm-3"><label>Address </label></div>
-                        <div class="col-sm-8"><input type="text" placeholder="Enter Address" name="address" class="form-control input-sm"  ></div>
+                        <div class="col-sm-8"><input type="text" placeholder="Enter Address" name="address" class="form-control input-sm" required ></div>
                     </div>
                     <!-- <div  class="row cont-row">
                         <div  class="col-sm-3"><label>Enter Message</label><span>:</span></div>
@@ -104,7 +106,7 @@ include "navbar.php";
                     <div class="row" style="margin-left: 400px;">
                         <!-- <div style="padding-top:10px;" class="col-sm-3"><label></label></div> -->
                         <div class="col-sm-12">
-                            <button class="btn btn-primary btn-sm" name="submit">Send Message</button>
+                            <button class="btn btn-primary btn-sm" name="submit">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -112,15 +114,15 @@ include "navbar.php";
 
                    <div class="row cont-row">
                         <div  class="col-sm-3"><label>Father Name </label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" placeholder="Enter Father Name" name="fname" class="form-control input-sm"  ></div>
+                        <div class="col-sm-8"><input type="text" placeholder="Enter Father Name" name="fname" class="form-control input-sm" required ></div>
                     </div>
                     <div  class="row cont-row">
-                        <div  class="col-sm-3"><label>Country </label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" name="country" placeholder="Enter Country" class="form-control input-sm"  ></div>
+                        <div  class="col-sm-3"><label>City </label><span>:</span></div>
+                        <div class="col-sm-8"><input type="text" name="country" placeholder="Enter city" class="form-control input-sm"  required></div>
                     </div>
                     <div class="row cont-row">
                         <div  class="col-sm-3"><label>Death Certificate  </label></div>
-                        <div class="col-sm-8"><input type="file" placeholder="Enter Name" name="image" class="form-control input-sm"  ></div>
+                        <div class="col-sm-8"><input type="file" placeholder="Enter Name" name="image" class="form-control input-sm"  required></div>
                     </div>
  </form>
                    

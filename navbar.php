@@ -8,11 +8,11 @@
                     <ul class="ulleft">
                         <li>
                             <i class="far fa-envelope"></i>
-                            bilalkhan031@gmail.com
+                            bbilalkhan031@gmail.com<
                             <span>|</span></li>
                         <li>
                             <i class="fas fa-phone-volume"></i>
-                            03439393370</li>
+                            +92343 9393370</li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 folouws">
@@ -20,22 +20,22 @@
                     <ul class="ulright">
                        <li> <small>Folow Us </small>:</li>
                         <li>
-                            <i class="fab fa-facebook-square"></i>
+                            <a href="https://www.facebook.com/pg/Humanity-Not-Out-103554545863683/about/"><i class="fab fa-facebook-square"></i></a>
                         </li>
                         <li>
-                            <i class="fab fa-twitter-square"></i>
+                            <a href=""><i class="fab fa-twitter-square"></i></a> 
                         </li>
                         <li>
-                            <i class="fab fa-instagram"></i>
+                            <a href=""><i class="fab fa-instagram"></i></a> 
                         </li>
                         <li>
-                            <i class="fab fa-linkedin"></i>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 d-none d-md-block col-md-6 btn-bhed">
                     <a href="apply.php"><button class="btn btn-sm btn-success">Join Us</button></a>
-                   <a href="sponser.php"> <button class="btn btn-sm btn-default">Donate</button></a>
+                   <a href="give.php"> <button class="btn btn-sm btn-default">Donate</button></a>
                 </div>
             </div>
         </div>
@@ -44,8 +44,8 @@
         <div class="container">
             <div class="row nav-row">
                 <div class="col-lg-3 col-md-12 logo">
-                    <a href="index.html">
-                        <img src="assets/images/WhatsApp Image 2022-09-24 at 2.53.24 AM.jpeg" alt="">
+                    <a href="index.php">
+                        <img src="abc.jpeg" alt="">
                         <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
                     </a>
 

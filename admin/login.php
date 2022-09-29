@@ -64,17 +64,17 @@ echo "Username or password is incorrect Pls Try Again";
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body style="background-image: url(xyz.jpeg);">
 
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                     <div class="control-group normal_text"> 
-                    <h3><img src="../assets/images/logo.jpg" alt="Logo" /></h3>
+                    <!-- <h3><img src="img/logo.png" alt="Logo" /></h3> -->
                 </div>
                     <div class="login-panel panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Please Sign In</h3>
+                            <h3 class="panel-title">Admin Sign In</h3>
                         </div>
                         <div class="panel-body">
 
