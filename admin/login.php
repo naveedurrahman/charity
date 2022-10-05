@@ -63,8 +63,22 @@ echo "Username or password is incorrect Pls Try Again";
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <style>
+            body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.623)), url(pic/best.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        </style>
     </head>
-    <body style="background-image: url(xyz.jpeg);">
+    <body>
 
         <div class="container">
             <div class="row">

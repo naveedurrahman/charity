@@ -144,12 +144,12 @@
     <section class="events">
         <div class="container">
             <div class="session-title row">
-                <h2>Sponser Causes</h2>
+                <h2>Sponsor Causes</h2>
                 <p>We are a non-profital & Charity raising money for child education</p> 
             </div>
             <div class="event-ro row">
                 <?php
-    $selecte = "SELECT * FROM `sponser` limit  3";
+    $selecte = "SELECT * FROM `sponser` ORDER BY rand() limit  3";
                 $result1 = mysqli_query($con, $selecte);
                  
                 while ($row = mysqli_fetch_assoc($result1)) {
@@ -294,7 +294,7 @@ But you can read the following facts in order to make sure of all pluses of our 
         					<figure>
         						<!-- <img src="assets/images/events/image_01.jpg" alt=""> -->
                                 <video controls width="360px" height="230px">
-                                    <source src="abc.mp4" type="video/mp4">
+                                    <source src="assets/videos/video1.mp4" type="video/mp4">
                                 </video>
         					</figure>
         					<div class="blog-detail">
@@ -314,7 +314,7 @@ But you can read the following facts in order to make sure of all pluses of our 
         				<div class="single-blog">
         					<figure>
         						<video controls width="360px" height="230px">
-                                    <source src="abc.mp4" type="video/mp4">
+                                    <source src="assets/videos/video2.mp4" type="video/mp4">
                                 </video>
         					</figure>
         					<div class="blog-detail">
@@ -333,7 +333,7 @@ But you can read the following facts in order to make sure of all pluses of our 
         				<div class="single-blog">
         					<figure>
         						<video controls width="360px" height="230px">
-                                    <source src="abc.mp4" type="video/mp4">
+                                    <source src="assets/videos/video3.mp4" type="video/mp4">
                                 </video>
         					</figure>
         					<div class="blog-detail">

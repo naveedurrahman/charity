@@ -45,7 +45,7 @@
             <div class="row nav-row">
                 <div class="col-lg-3 col-md-12 logo">
                     <a href="index.php">
-                        <img src="abc.jpeg" alt="">
+                        <img src="logo.png" alt="">
                         <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-lg-none  small-menu fa-bars"></i></a>
                     </a>
 
@@ -61,7 +61,7 @@
                                     <a class="nav-link" href="about.php">About Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="sponser.php">Sponser</a>
+                                    <a class="nav-link" href="sponser.php">Sponsor</a>
                                 </li>
 
                                 <li class="nav-item">
